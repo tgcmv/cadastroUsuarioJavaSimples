@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald');
+
+/** Variables
+ ---------------------------------------------------------*/
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Oswald";
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #DDDDDD;
+  margin-bottom: 55px;
+}
+
+.content-wrapper .sing-up-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #434C5F;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25);
+}
+
+/** Input
+ ---------------------------------------------------------*/
+.input {
+  position: relative;
+  width: 300px;
+  margin-bottom: 25px;
+}
+
+.input input {
+  background: transparent;
+  outline: none;
+  font-size: 1em;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  color: white;
+  font-family: "Open Sans";
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.input label {
+  color: #DDDDDD;
+  font-size: 0.85em;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  font-family: "Open Sans";
+  top: 15px;
+  text-transform: uppercase;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 0;
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  left: 0;
+  background: #DA2E44;
+}
+
+input:focus~.bar,
+input:valid~.bar {
+  width: 100%;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+  top: -10px;
+  font-size: 0.55em;
+  color: #DDDDDD;
+}
+
+/** Buttons
+ ---------------------------------------------------------*/
+.button-square,
+.button-transparent,
+button {
+  font-family: "Oswald";
+  position: relative;
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 20px 0;
+  background-color: #DA2E44;
+  color: #DDDDDD;
+  border-radius: 0;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 0.85em;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+}
+
+.button-square:hover,
+.button-transparent:hover,
+button:hover {
+  background-color: #9f1c2d;
+}
+
+.button-transparent:hover {
+  background-color: rgba(221, 221, 221, 0.15);
+}
