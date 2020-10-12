@@ -4,12 +4,12 @@
     <title>Inscrever-se</title>
     <meta content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="./styles.css" media="screen" />
-
+    
 </head>  
 <body>
 	<div class="content-wrapper">
 		<div class="sing-up-panel">
-			<form>
+			<form onsubmit="usuarioController.adiciona(event)">
 				<h1>Inscreva-se</h1>
 				<div class="input">
 					<input type="text" required id="name">
@@ -33,5 +33,14 @@
 		</div>
 		
 	</div>
+
+	<div id="usuariosView"></div>
+	<script src="../../js/app/models/Usuario.js"></script>
+	<script src="../../js/app/models/ListaUsuario.js"></script>
+	<script src="../../js/app/controller/UsuarioController.js"></script>
+    <script src="../../js/app/views/UsuarioView.js"></script>
+	<script>
+        var usuarioController = new UsuarioController();
+    </script>
 </body>
 </html>

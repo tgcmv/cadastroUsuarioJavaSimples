@@ -114,3 +114,11 @@ button:hover {
 .button-transparent:hover {
   background-color: rgba(221, 221, 221, 0.15);
 }
+/** Tables
+ ---------------------------------------------------------*/
+table, th, td {
+  border: 1px solid black;
+}
+th, td {
+  padding: 10px;
+}
